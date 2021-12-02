@@ -30,191 +30,225 @@ namespace FirewallBlocker
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.AppPathTextBox = new System.Windows.Forms.TextBox();
+            this.ipListRichText = new System.Windows.Forms.RichTextBox();
+            this.selectAppButton = new System.Windows.Forms.Button();
+            this.createRuleButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.duvidaAppHover = new System.Windows.Forms.Button();
-            this.listaIPHover = new System.Windows.Forms.Button();
-            this.Titulo2 = new System.Windows.Forms.Label();
-            this.dicaLista = new System.Windows.Forms.Label();
-            this.Titulo1 = new System.Windows.Forms.Label();
-            this.dicaCaminho = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.appHelpButton = new System.Windows.Forms.Button();
+            this.ipListLabel = new System.Windows.Forms.Label();
+            this.pathTitleLabel = new System.Windows.Forms.Label();
+            this.inoutCheckbox = new System.Windows.Forms.CheckBox();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.titleBackgroundPanel = new System.Windows.Forms.Panel();
+            this.minimizeButton = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.mainPanel.SuspendLayout();
+            this.titleBackgroundPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // AppPathTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 20);
-            this.textBox1.TabIndex = 0;
+            this.AppPathTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.AppPathTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.AppPathTextBox.Location = new System.Drawing.Point(12, 85);
+            this.AppPathTextBox.Name = "AppPathTextBox";
+            this.AppPathTextBox.Size = new System.Drawing.Size(282, 21);
+            this.AppPathTextBox.TabIndex = 0;
             // 
-            // richTextBox1
+            // ipListRichText
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(15, 191);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(242, 172);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.ipListRichText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.ipListRichText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ipListRichText.Location = new System.Drawing.Point(12, 147);
+            this.ipListRichText.Name = "ipListRichText";
+            this.ipListRichText.Size = new System.Drawing.Size(282, 172);
+            this.ipListRichText.TabIndex = 1;
+            this.ipListRichText.Text = "";
             // 
-            // button1
+            // selectAppButton
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(286, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Selecionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.selectAppButton.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.selectAppButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
+            this.selectAppButton.Location = new System.Drawing.Point(376, 78);
+            this.selectAppButton.Name = "selectAppButton";
+            this.selectAppButton.Size = new System.Drawing.Size(100, 35);
+            this.selectAppButton.TabIndex = 2;
+            this.selectAppButton.Text = "Selecionar";
+            this.selectAppButton.UseVisualStyleBackColor = true;
+            this.selectAppButton.Click += new System.EventHandler(this.selectAppButton_Click);
             // 
-            // button2
+            // createRuleButton
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.25F);
-            this.button2.Location = new System.Drawing.Point(286, 247);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 35);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Criar Regra";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.createRuleButton.Font = new System.Drawing.Font("Segoe UI", 10.25F);
+            this.createRuleButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
+            this.createRuleButton.Location = new System.Drawing.Point(376, 195);
+            this.createRuleButton.Name = "createRuleButton";
+            this.createRuleButton.Size = new System.Drawing.Size(100, 35);
+            this.createRuleButton.TabIndex = 3;
+            this.createRuleButton.Text = "Criar Regra";
+            this.createRuleButton.UseVisualStyleBackColor = true;
+            this.createRuleButton.Click += new System.EventHandler(this.createRuleButton_Click);
             // 
-            // label1
+            // titleLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.label1.Location = new System.Drawing.Point(134, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 37);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Firewall Blocker";
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.titleLabel.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.titleLabel.Location = new System.Drawing.Point(150, 0);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(228, 32);
+            this.titleLabel.TabIndex = 4;
+            this.titleLabel.Text = "Firewall Blocker";
+            this.titleLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleLabel_MouseDown);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // duvidaAppHover
+            // appHelpButton
             // 
-            this.duvidaAppHover.BackColor = System.Drawing.Color.Transparent;
-            this.duvidaAppHover.BackgroundImage = global::FirewallBlocker.Properties.Resources.question_solid;
-            this.duvidaAppHover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.duvidaAppHover.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.duvidaAppHover.FlatAppearance.BorderSize = 0;
-            this.duvidaAppHover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.duvidaAppHover.ForeColor = System.Drawing.Color.Transparent;
-            this.duvidaAppHover.Location = new System.Drawing.Point(75, 58);
-            this.duvidaAppHover.Name = "duvidaAppHover";
-            this.duvidaAppHover.Size = new System.Drawing.Size(28, 23);
-            this.duvidaAppHover.TabIndex = 5;
-            this.duvidaAppHover.UseVisualStyleBackColor = false;
-            this.duvidaAppHover.MouseLeave += new System.EventHandler(this.duvidaAppHover_MouseLeave);
-            this.duvidaAppHover.MouseHover += new System.EventHandler(this.duvidaAppHover_MouseHover);
+            this.appHelpButton.BackColor = System.Drawing.Color.Transparent;
+            this.appHelpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.appHelpButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.appHelpButton.FlatAppearance.BorderSize = 0;
+            this.appHelpButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.appHelpButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.appHelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.appHelpButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.appHelpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.appHelpButton.Location = new System.Drawing.Point(463, 303);
+            this.appHelpButton.Name = "appHelpButton";
+            this.appHelpButton.Size = new System.Drawing.Size(82, 23);
+            this.appHelpButton.TabIndex = 5;
+            this.appHelpButton.Text = "Ajuda?";
+            this.appHelpButton.UseVisualStyleBackColor = false;
+            this.appHelpButton.Click += new System.EventHandler(this.appHelpButton_Click_1);
             // 
-            // listaIPHover
+            // ipListLabel
             // 
-            this.listaIPHover.BackColor = System.Drawing.Color.Transparent;
-            this.listaIPHover.BackgroundImage = global::FirewallBlocker.Properties.Resources.question_solid;
-            this.listaIPHover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.listaIPHover.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.listaIPHover.FlatAppearance.BorderSize = 0;
-            this.listaIPHover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listaIPHover.ForeColor = System.Drawing.Color.Transparent;
-            this.listaIPHover.Location = new System.Drawing.Point(75, 143);
-            this.listaIPHover.Name = "listaIPHover";
-            this.listaIPHover.Size = new System.Drawing.Size(28, 23);
-            this.listaIPHover.TabIndex = 6;
-            this.listaIPHover.UseVisualStyleBackColor = false;
-            this.listaIPHover.MouseLeave += new System.EventHandler(this.listaIPHover_MouseLeave);
-            this.listaIPHover.MouseHover += new System.EventHandler(this.listaIPHover_MouseHover);
+            this.ipListLabel.AutoSize = true;
+            this.ipListLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ipListLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ipListLabel.Location = new System.Drawing.Point(91, 124);
+            this.ipListLabel.Name = "ipListLabel";
+            this.ipListLabel.Size = new System.Drawing.Size(100, 20);
+            this.ipListLabel.TabIndex = 7;
+            this.ipListLabel.Text = "Lista de IP";
             // 
-            // Titulo2
+            // pathTitleLabel
             // 
-            this.Titulo2.AutoSize = true;
-            this.Titulo2.Font = new System.Drawing.Font("Segoe UI", 12.75F);
-            this.Titulo2.Location = new System.Drawing.Point(109, 141);
-            this.Titulo2.Name = "Titulo2";
-            this.Titulo2.Size = new System.Drawing.Size(88, 23);
-            this.Titulo2.TabIndex = 7;
-            this.Titulo2.Text = "Lista de Ip";
+            this.pathTitleLabel.AutoSize = true;
+            this.pathTitleLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pathTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.pathTitleLabel.Location = new System.Drawing.Point(99, 62);
+            this.pathTitleLabel.Name = "pathTitleLabel";
+            this.pathTitleLabel.Size = new System.Drawing.Size(93, 20);
+            this.pathTitleLabel.TabIndex = 9;
+            this.pathTitleLabel.Text = "Aplicativo";
             // 
-            // dicaLista
+            // inoutCheckbox
             // 
-            this.dicaLista.AutoSize = true;
-            this.dicaLista.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.dicaLista.Location = new System.Drawing.Point(-1, 169);
-            this.dicaLista.Name = "dicaLista";
-            this.dicaLista.Size = new System.Drawing.Size(476, 19);
-            this.dicaLista.TabIndex = 8;
-            this.dicaLista.Text = "Adicione os ips que deseja bloquear, ou deixe em branco para bloquear tudo";
-            this.dicaLista.Visible = false;
+            this.inoutCheckbox.AutoSize = true;
+            this.inoutCheckbox.Font = new System.Drawing.Font("Verdana", 8F);
+            this.inoutCheckbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.inoutCheckbox.Location = new System.Drawing.Point(310, 172);
+            this.inoutCheckbox.Name = "inoutCheckbox";
+            this.inoutCheckbox.Size = new System.Drawing.Size(211, 17);
+            this.inoutCheckbox.TabIndex = 11;
+            this.inoutCheckbox.Text = "Criar regra de entrada e saída ?";
+            this.inoutCheckbox.UseVisualStyleBackColor = true;
             // 
-            // Titulo1
+            // mainPanel
             // 
-            this.Titulo1.AutoSize = true;
-            this.Titulo1.Font = new System.Drawing.Font("Segoe UI", 12.75F);
-            this.Titulo1.Location = new System.Drawing.Point(109, 58);
-            this.Titulo1.Name = "Titulo1";
-            this.Titulo1.Size = new System.Drawing.Size(84, 23);
-            this.Titulo1.TabIndex = 9;
-            this.Titulo1.Text = "Aplicativo";
+            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.mainPanel.Controls.Add(this.button1);
+            this.mainPanel.Controls.Add(this.titleBackgroundPanel);
+            this.mainPanel.Controls.Add(this.selectAppButton);
+            this.mainPanel.Controls.Add(this.appHelpButton);
+            this.mainPanel.Controls.Add(this.pathTitleLabel);
+            this.mainPanel.Controls.Add(this.createRuleButton);
+            this.mainPanel.Controls.Add(this.ipListRichText);
+            this.mainPanel.Controls.Add(this.inoutCheckbox);
+            this.mainPanel.Controls.Add(this.AppPathTextBox);
+            this.mainPanel.Controls.Add(this.ipListLabel);
+            this.mainPanel.Location = new System.Drawing.Point(2, 2);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(561, 332);
+            this.mainPanel.TabIndex = 13;
+            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
             // 
-            // dicaCaminho
+            // button1
             // 
-            this.dicaCaminho.AutoSize = true;
-            this.dicaCaminho.Font = new System.Drawing.Font("Segoe UI", 9.1F);
-            this.dicaCaminho.Location = new System.Drawing.Point(12, 80);
-            this.dicaCaminho.Name = "dicaCaminho";
-            this.dicaCaminho.Size = new System.Drawing.Size(383, 17);
-            this.dicaCaminho.TabIndex = 10;
-            this.dicaCaminho.Text = "Cole o caminho manualmente ou clique selecionar para navegar";
-            this.dicaCaminho.Visible = false;
-            this.dicaCaminho.Click += new System.EventHandler(this.label5_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.button1.Location = new System.Drawing.Point(301, 303);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Código no Github";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // titleBackgroundPanel
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(263, 222);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(179, 19);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Criar regra de entrada e saida";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.titleBackgroundPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.titleBackgroundPanel.Controls.Add(this.minimizeButton);
+            this.titleBackgroundPanel.Controls.Add(this.closeButton);
+            this.titleBackgroundPanel.Controls.Add(this.titleLabel);
+            this.titleBackgroundPanel.Location = new System.Drawing.Point(0, 0);
+            this.titleBackgroundPanel.Name = "titleBackgroundPanel";
+            this.titleBackgroundPanel.Size = new System.Drawing.Size(570, 36);
+            this.titleBackgroundPanel.TabIndex = 13;
+            this.titleBackgroundPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleBackgroundPanel_MouseDown);
             // 
-            // linkLabel1
+            // minimizeButton
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.Location = new System.Drawing.Point(353, 350);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(109, 13);
-            this.linkLabel1.TabIndex = 12;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Disponível no GitHub";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.minimizeButton.FlatAppearance.BorderSize = 0;
+            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeButton.Font = new System.Drawing.Font("Verdana", 15F);
+            this.minimizeButton.ForeColor = System.Drawing.Color.White;
+            this.minimizeButton.Location = new System.Drawing.Point(435, 0);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(54, 36);
+            this.minimizeButton.TabIndex = 7;
+            this.minimizeButton.Text = "-";
+            this.minimizeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.minimizeButton.UseVisualStyleBackColor = true;
+            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
+            // 
+            // closeButton
+            // 
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.ForeColor = System.Drawing.Color.White;
+            this.closeButton.Location = new System.Drawing.Point(494, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(54, 37);
+            this.closeButton.TabIndex = 6;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 372);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.dicaCaminho);
-            this.Controls.Add(this.Titulo1);
-            this.Controls.Add(this.dicaLista);
-            this.Controls.Add(this.Titulo2);
-            this.Controls.Add(this.listaIPHover);
-            this.Controls.Add(this.duvidaAppHover);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(550, 332);
+            this.Controls.Add(this.mainPanel);
+            this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -222,27 +256,32 @@ namespace FirewallBlocker
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Firewall Blocker";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint_1);
+            this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
+            this.titleBackgroundPanel.ResumeLayout(false);
+            this.titleBackgroundPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox AppPathTextBox;
+        private System.Windows.Forms.RichTextBox ipListRichText;
+        private System.Windows.Forms.Button selectAppButton;
+        private System.Windows.Forms.Button createRuleButton;
+        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button duvidaAppHover;
-        private System.Windows.Forms.Button listaIPHover;
-        private System.Windows.Forms.Label Titulo2;
-        private System.Windows.Forms.Label dicaLista;
-        private System.Windows.Forms.Label Titulo1;
-        private System.Windows.Forms.Label dicaCaminho;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button appHelpButton;
+        private System.Windows.Forms.Label ipListLabel;
+        private System.Windows.Forms.Label pathTitleLabel;
+        private System.Windows.Forms.CheckBox inoutCheckbox;
+        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Panel titleBackgroundPanel;
+        private System.Windows.Forms.Button minimizeButton;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 
