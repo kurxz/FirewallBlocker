@@ -59,15 +59,5 @@ namespace FirewallBlocker.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap question_solid {
-            get {
-                object obj = ResourceManager.GetObject("question-solid", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
