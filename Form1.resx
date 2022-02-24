@@ -117,10 +117,314 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>550, 332</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Parent" xml:space="preserve">
+    <value>titleBackgroundPanel</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="titleBackgroundPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;AppPathTextBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="translationIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        TgAAAE4Bsc0fMwAAA1FJREFUaEPtl8tqFEEUhhNNjA9gDG5cuIiK0URFFwous5QQF+JC8BGiG1HEuHFr
+        FARfQo36AiK41YiiKLoR8X4BFyLe/U7VPzXTNd0z0z09mQzMBz/01H9O1emZnlNdA3369GmPfxEa7h1U
+        d0DDvYPqDmi4d1DdAQ0vP1q/a6iM4mierqEyiqN5uobKKI7m6RoqY2VBXYPomavQ8xmNyF75UOy0K7vK
+        ZVm9AQVf93UH9spa+VDsBPrjyvY8lLX8sPgxX0PgqqxMiLnhQwOHZS0/LD6EXrgyqkzLrgNvH/rrojxP
+        0CrZ3YECjrpSqjxFa2QHGBtBjy2ghiOyuwdFWEu868qpMi87wNh5bwXuoEHZ3YVCptAvq0r8RuFR4voA
+        qvW/o3HZqeDbnDFTssuHyc/6NQJf0Ca0Eb23gRpOKy0TYhZ8aIIF2eXD5KtR/CjdR/f8ZeA2GlJaKvjD
+        6IMFR9jYsMLKh8k3oFe2UgYv0ajCMyFmxkWnM6OwzsACu9A3t1QSe+73KKwhxC26jHQWFdYZWGAcvXVL
+        JXmHGv5xDWJG0U9LEPbY1D5O5jX9FQvBxJvRa1slA7uJbQpPBX/ORVa5iC75y8CcwsuDSbegRsVXsI40
+        obQ68JZcVJWdyB7LWpYUXg5MuBW9cVMnmUcn/WUCu4ntSg8wFvf+R7LMe+CHAuXsCUw0idJaXtiNuU67
+        CcvZoRAHn+Pef1yWeSf8UKD9PYFJ7Of95KZLck4hARvzVoIrss2Pe7/9Wcdkmz+msQoWW3xPIDmr+Lr3
+        oAp48S+xX5Z5ce+/KSvA2C1vBYrtCSTan8rOsTGZxVcgpnITz1F4meM67v2zsgKMHfJWIP+eQNJuVKj4
+        CsTaTZzRR/sc9/7UQz5ja9BHCxD59gSC7UDy1TIj6p75ZpCzVpd2Hff+PLS+JxB8yuckyF18DHPEvT8P
+        +fYEEmr/iC0/NlkwR9p7f17y7QkkWEts+5s3mCftvT8vnTsnNIKF497/A62TnQkx61F5e0JRWDTu/ddk
+        NYXYcvaEdmDRuPcflNUUYmd9SqCz54QYFox7v73gtfwYEGt7Qvzq0ZlzQhosFvf+C7Jahhw7K9RS/jkh
+        CxaLe/+krJYhJ27B5Z4T+vTpWQYG/gOSQLRJJHvl1QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;githubButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;appHelpButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="minimizeButton.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="createRuleButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.25pt</value>
+  </data>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="minimizeButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="ipListLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 124</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="ipListRichText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AppPathTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 21</value>
+  </data>
+  <data name="&gt;&gt;inoutCheckbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pathTitleLabel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;ipListRichText.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;langSelectBox.Name" xml:space="preserve">
+    <value>langSelectBox</value>
+  </data>
+  <data name="titleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 20.25pt</value>
+  </data>
+  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 37</value>
+  </data>
+  <data name="pathTitleLabel.Text" xml:space="preserve">
+    <value>Aplicativo</value>
+  </data>
+  <data name="pathTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="appHelpButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;ipListLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="minimizeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 36</value>
+  </data>
+  <data name="&gt;&gt;ipListRichText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minimizeButton.Name" xml:space="preserve">
+    <value>minimizeButton</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="inoutCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 172</value>
+  </data>
+  <data name="titleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="langSelectBox.Items" xml:space="preserve">
+    <value>Português Brasil</value>
+  </data>
+  <data name="minimizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;minimizeButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ipListLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;appHelpButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="titleBackgroundPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="langSelectBox.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="appHelpButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Parent" xml:space="preserve">
+    <value>titleBackgroundPanel</value>
+  </data>
+  <data name="&gt;&gt;inoutCheckbox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="langSelectBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;selectAppButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="inoutCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 17</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;AppPathTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;titleBackgroundPanel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;ipListLabel.Name" xml:space="preserve">
+    <value>ipListLabel</value>
+  </data>
+  <data name="inoutCheckbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8pt</value>
+  </data>
+  <data name="createRuleButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="closeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>494, 0</value>
+  </data>
+  <data name="selectAppButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="closeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="pathTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="selectAppButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 78</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;titleBackgroundPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ipListRichText.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="translationIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 28</value>
+  </data>
+  <data name="githubButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="AppPathTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 32</value>
+  </data>
+  <data name="ipListLabel.Text" xml:space="preserve">
+    <value>Lista de IP</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Firewall Blocker</value>
+  </data>
+  <data name="githubButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AppPathTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 85</value>
+  </data>
+  <data name="inoutCheckbox.Text" xml:space="preserve">
+    <value>Criar regra de entrada e saída ?</value>
+  </data>
+  <data name="&gt;&gt;createRuleButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="selectAppButton.Text" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="ipListLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;minimizeButton.Parent" xml:space="preserve">
+    <value>titleBackgroundPanel</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 13</value>
+  </data>
+  <data name="appHelpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 303</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;translationIcon.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="translationIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;selectAppButton.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;translationIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pathTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>Firewall Blocker</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="minimizeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 15pt</value>
+  </data>
+  <data name="closeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pathTitleLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ipListLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="titleBackgroundPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>570, 36</value>
+  </data>
+  <data name="inoutCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;minimizeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="githubButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="translationIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 39</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEA/PYAAAEAIACMUwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAD8AAAA9ggGAAAA8jDqAQAAAAFz
@@ -482,4 +786,193 @@
         6PNQ4vCJEu0QJcAnSrRDlACfKNEOUQJ8okQ7RP8fLDeVZsjdIisAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="ipListLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;translationIcon.Name" xml:space="preserve">
+    <value>translationIcon</value>
+  </data>
+  <data name="inoutCheckbox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inoutCheckbox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;inoutCheckbox.Name" xml:space="preserve">
+    <value>inoutCheckbox</value>
+  </data>
+  <data name="appHelpButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ipListLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12.75pt</value>
+  </data>
+  <data name="&gt;&gt;appHelpButton.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="ipListRichText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="githubButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt, style=Bold</value>
+  </data>
+  <data name="langSelectBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 42</value>
+  </data>
+  <data name="githubButton.Text" xml:space="preserve">
+    <value>Código no Github</value>
+  </data>
+  <data name="ipListRichText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 172</value>
+  </data>
+  <data name="&gt;&gt;ipListRichText.Name" xml:space="preserve">
+    <value>ipListRichText</value>
+  </data>
+  <data name="githubButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="appHelpButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;titleBackgroundPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="minimizeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 0</value>
+  </data>
+  <data name="&gt;&gt;createRuleButton.Name" xml:space="preserve">
+    <value>createRuleButton</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
+    <value>closeButton</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="createRuleButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 195</value>
+  </data>
+  <data name="selectAppButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;langSelectBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="createRuleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="&gt;&gt;titleBackgroundPanel.Name" xml:space="preserve">
+    <value>titleBackgroundPanel</value>
+  </data>
+  <data name="&gt;&gt;AppPathTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubButton.Name" xml:space="preserve">
+    <value>githubButton</value>
+  </data>
+  <data name="&gt;&gt;appHelpButton.Name" xml:space="preserve">
+    <value>appHelpButton</value>
+  </data>
+  <data name="&gt;&gt;AppPathTextBox.Name" xml:space="preserve">
+    <value>AppPathTextBox</value>
+  </data>
+  <data name="titleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ipListLabel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;selectAppButton.Name" xml:space="preserve">
+    <value>selectAppButton</value>
+  </data>
+  <data name="&gt;&gt;createRuleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Name" xml:space="preserve">
+    <value>titleLabel</value>
+  </data>
+  <data name="&gt;&gt;githubButton.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="translationIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;createRuleButton.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="pathTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 62</value>
+  </data>
+  <data name="&gt;&gt;pathTitleLabel.Name" xml:space="preserve">
+    <value>pathTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;selectAppButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="selectAppButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="&gt;&gt;langSelectBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="githubButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 303</value>
+  </data>
+  <data name="minimizeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="createRuleButton.Text" xml:space="preserve">
+    <value>Criar Regra</value>
+  </data>
+  <data name="langSelectBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="pathTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12.75pt</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pathTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 20</value>
+  </data>
+  <data name="appHelpButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;translationIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;langSelectBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="closeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="appHelpButton.Text" xml:space="preserve">
+    <value>Ajuda?</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 332</value>
+  </data>
+  <data name="ipListRichText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 147</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

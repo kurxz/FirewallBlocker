@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Net;
 using System.Runtime.InteropServices;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace FirewallBlocker
@@ -15,15 +18,37 @@ namespace FirewallBlocker
 
         private int borderSize = 2;
         private Color borderColor = Color.FromArgb(57, 62, 70);
+        private string langCode = ConfigurationManager.AppSettings["langCode"];
 
         public Form1()
         {
-            InitializeComponent();
+            var configFile = File.Exists(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+            if (configFile == true)
+            {
+                try
+                {
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(langCode);
+                }
+                catch
+                {
+                    MessageBox.Show("langCode inválido. Código Ex1", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Application.Exit();
+                    System.Environment.Exit(1);
+                }
 
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Padding = new Padding(borderSize);
-            this.mainPanel.BackColor = borderColor;
-            this.BackColor = borderColor;
+                InitializeComponent();
+
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.Padding = new Padding(borderSize);
+                this.mainPanel.BackColor = borderColor;
+                this.BackColor = borderColor;
+            }
+            else
+            {
+                MessageBox.Show("Arquivo de configuração inválido.  Código Ex2", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                System.Environment.Exit(1);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,7 +83,6 @@ namespace FirewallBlocker
             String Program = AppPathTextBox.Text;
             String IPs = ipListRichText.Text;
             bool InOutRule = false;
-            bool shouldCreate = false;
 
             if (inoutCheckbox.Checked)
             {
@@ -67,24 +91,22 @@ namespace FirewallBlocker
 
             if (string.IsNullOrEmpty(Program) || Program.Substring(Program.Length - 4) != ".exe")
             {
-                MessageBox.Show("Você não selecionou um aplicativo. Inclua o executável terminando em .exe", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.strings.notValidExe, Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 if (string.IsNullOrEmpty(ipListRichText.Text))
                 {
-                    DialogResult dialogResult = MessageBox.Show("Você deixou a lista de IPs em branco. O app irá block TODOS os IPs para o processo selecionado. Deseja prosseguir?", "Aviso!", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show(Properties.strings.emptyIPList, Properties.strings.Alert, MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        shouldCreate = true;
+                        createRule(Program, IPs, InOutRule);
                     }
                     else if (dialogResult == DialogResult.No)
                     {
-                        shouldCreate = false;
                     }
                 }
-
-                if (shouldCreate == true)
+                else
                 {
                     createRule(Program, IPs, InOutRule);
                 }
@@ -116,7 +138,7 @@ namespace FirewallBlocker
                             }
                             else
                             {
-                                MessageBox.Show($"Um dos IPs é inválido: {line}", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show($"{Properties.strings.invalidIP} {line}", Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 ipIsOk = false;
                                 break;
                             }
@@ -127,7 +149,7 @@ namespace FirewallBlocker
                             block = block.Remove(block.Length - 1);
                             var cmdCommand = "netsh advfirewall firewall add rule name=\"" + name + "\" ^ dir =in interface=any action = block remoteip=\"" + block + "\"" + " program=\"" + program + "\"";
                             System.Diagnostics.Process.Start("CMD.exe", "/c" + cmdCommand);
-                            MessageBox.Show("Regra criada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(Properties.strings.ruleCreated, Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
@@ -136,7 +158,7 @@ namespace FirewallBlocker
                         {
                             var cmdCommand = "netsh advfirewall firewall add rule name=\"" + name + "\" ^ dir =in interface=any action = block program=\"" + program + "\"";
                             System.Diagnostics.Process.Start("CMD.exe", "/c" + cmdCommand);
-                            MessageBox.Show("Regra criada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(Properties.strings.ruleCreated, Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
 
@@ -155,7 +177,7 @@ namespace FirewallBlocker
                             }
                             else
                             {
-                                MessageBox.Show($"Um dos IPs é inválido: {line}", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show($"{Properties.strings.invalidIP} {line}", Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 ipIsOk = false;
                                 break;
                             }
@@ -168,7 +190,7 @@ namespace FirewallBlocker
                             var blockIn = "netsh advfirewall firewall add rule name=\"" + name + "\" ^ dir =in interface=any action = block remoteip=\"" + block + "\"" + " program=\"" + program + "\"";
                             System.Diagnostics.Process.Start("CMD.exe", "/c" + blockOut);
                             System.Diagnostics.Process.Start("CMD.exe", "/c" + blockIn);
-                            MessageBox.Show("Regra criada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(Properties.strings.ruleCreated, Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
@@ -179,7 +201,7 @@ namespace FirewallBlocker
                             var blockIn = "netsh advfirewall firewall add rule name=\"" + name + "\" ^ dir =in interface=any action = block program=\"" + program + "\"";
                             System.Diagnostics.Process.Start("CMD.exe", "/c" + blockOut);
                             System.Diagnostics.Process.Start("CMD.exe", "/c" + blockIn);
-                            MessageBox.Show("Regra criada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(Properties.strings.ruleCreated, Properties.strings.Alert, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
 
@@ -208,7 +230,7 @@ namespace FirewallBlocker
 
         private void appHelpButton_Click_1(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Ao continuar irá abrir uma aba no navegador com a página de ajuda. Deseja prosseguir?", "Aviso!", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show(Properties.strings.openHelpWarning, Properties.strings.Alert, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
                 Process.Start("https://github.com/kurxz/FirewallBlocker/wiki/Help-Page");
@@ -385,6 +407,65 @@ namespace FirewallBlocker
             //This function is used to drag the app arround the screen
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void langSelectBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            switch (langSelectBox.SelectedIndex)
+            {
+                case 0:
+
+                    AddUpdateAppSettings("langCode", "pt");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt");
+
+                    applyTranslations();
+
+                    break;
+
+                case 1:
+
+                    AddUpdateAppSettings("langCode", "en");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+
+                    applyTranslations();
+
+                    break;
+            }
+        }
+
+        private void applyTranslations()
+        {
+            pathTitleLabel.Text = Properties.strings.pathTitleLabel;
+            ipListLabel.Text = Properties.strings.ipListLabel;
+            selectAppButton.Text = Properties.strings.selectAppButton;
+            createRuleButton.Text = Properties.strings.createRuleButton;
+            githubButton.Text = Properties.strings.githubButton;
+            appHelpButton.Text = Properties.strings.appHelpButton;
+            inoutCheckbox.Text = Properties.strings.inoutCheckbox;
+        }
+
+        public static void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
+                if (settings.Count == 0 | settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key].Value = value;
+                }
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException exc)
+            {
+                MessageBox.Show("Falha ao salvar Ex3", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
