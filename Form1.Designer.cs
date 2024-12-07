@@ -54,16 +54,16 @@ namespace FirewallBlocker
             // 
             // AppPathTextBox
             // 
-            resources.ApplyResources(this.AppPathTextBox, "AppPathTextBox");
             this.AppPathTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.AppPathTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            resources.ApplyResources(this.AppPathTextBox, "AppPathTextBox");
             this.AppPathTextBox.Name = "AppPathTextBox";
             // 
             // ipListRichText
             // 
-            resources.ApplyResources(this.ipListRichText, "ipListRichText");
             this.ipListRichText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.ipListRichText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            resources.ApplyResources(this.ipListRichText, "ipListRichText");
             this.ipListRichText.Name = "ipListRichText";
             // 
             // selectAppButton
@@ -93,12 +93,11 @@ namespace FirewallBlocker
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
             // appHelpButton
             // 
-            resources.ApplyResources(this.appHelpButton, "appHelpButton");
             this.appHelpButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.appHelpButton, "appHelpButton");
             this.appHelpButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.appHelpButton.FlatAppearance.BorderSize = 0;
             this.appHelpButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -129,7 +128,6 @@ namespace FirewallBlocker
             // 
             // mainPanel
             // 
-            resources.ApplyResources(this.mainPanel, "mainPanel");
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.mainPanel.Controls.Add(this.translationIcon);
             this.mainPanel.Controls.Add(this.langSelectBox);
@@ -143,6 +141,7 @@ namespace FirewallBlocker
             this.mainPanel.Controls.Add(this.inoutCheckbox);
             this.mainPanel.Controls.Add(this.AppPathTextBox);
             this.mainPanel.Controls.Add(this.ipListLabel);
+            resources.ApplyResources(this.mainPanel, "mainPanel");
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
@@ -155,20 +154,21 @@ namespace FirewallBlocker
             // 
             // langSelectBox
             // 
-            resources.ApplyResources(this.langSelectBox, "langSelectBox");
             this.langSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.langSelectBox.FormattingEnabled = true;
             this.langSelectBox.Items.AddRange(new object[] {
             resources.GetString("langSelectBox.Items"),
-            resources.GetString("langSelectBox.Items1")});
+            resources.GetString("langSelectBox.Items1"),
+            resources.GetString("langSelectBox.Items2")});
+            resources.ApplyResources(this.langSelectBox, "langSelectBox");
             this.langSelectBox.Name = "langSelectBox";
             this.langSelectBox.TabStop = false;
             this.langSelectBox.SelectedIndexChanged += new System.EventHandler(this.langSelectBox_SelectedIndexChanged);
             // 
             // githubButton
             // 
-            resources.ApplyResources(this.githubButton, "githubButton");
             this.githubButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.githubButton, "githubButton");
             this.githubButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.githubButton.FlatAppearance.BorderSize = 0;
             this.githubButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -180,18 +180,18 @@ namespace FirewallBlocker
             // 
             // titleBackgroundPanel
             // 
-            resources.ApplyResources(this.titleBackgroundPanel, "titleBackgroundPanel");
             this.titleBackgroundPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.titleBackgroundPanel.Controls.Add(this.minimizeButton);
             this.titleBackgroundPanel.Controls.Add(this.closeButton);
             this.titleBackgroundPanel.Controls.Add(this.titleLabel);
+            resources.ApplyResources(this.titleBackgroundPanel, "titleBackgroundPanel");
             this.titleBackgroundPanel.Name = "titleBackgroundPanel";
             this.titleBackgroundPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleBackgroundPanel_MouseDown);
             // 
             // minimizeButton
             // 
-            resources.ApplyResources(this.minimizeButton, "minimizeButton");
             this.minimizeButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.minimizeButton, "minimizeButton");
             this.minimizeButton.ForeColor = System.Drawing.Color.White;
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.UseVisualStyleBackColor = true;
@@ -199,8 +199,8 @@ namespace FirewallBlocker
             // 
             // closeButton
             // 
-            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.ForeColor = System.Drawing.Color.White;
             this.closeButton.Name = "closeButton";
             this.closeButton.UseVisualStyleBackColor = true;

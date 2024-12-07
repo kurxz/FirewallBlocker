@@ -425,6 +425,15 @@ namespace FirewallBlocker
 
                 case 1:
 
+                    AddUpdateAppSettings("langCode", "ru");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+
+                    applyTranslations();
+
+                    break;
+
+                case 2:
+
                     AddUpdateAppSettings("langCode", "en");
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
 
