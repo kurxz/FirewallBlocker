@@ -127,7 +127,7 @@
     <value>Создать правило</value>
   </data>
   <data name="emptyIPList" xml:space="preserve">
-    <value>Вы оставили список IP пустым. Приложение заблокирует ВСЕ IP для выбранного процесса. Вы хотите продолжить?</value>
+    <value>Вы оставили список IP-адресов пустым. Приложение заблокирует ВСЕ IP-адреса для выбранного процесса. Вы хотите продолжить?</value>
   </data>
   <data name="githubButton" xml:space="preserve">
     <value>Код на Github</value>
@@ -139,10 +139,10 @@
     <value>Создать правило входа и выхода?</value>
   </data>
   <data name="invalidIP" xml:space="preserve">
-    <value>Один из IP недействителен</value>
+    <value>Один из IP-адресов недействителен</value>
   </data>
   <data name="ipListLabel" xml:space="preserve">
-    <value>Список IP</value>
+    <value>Список IP-адресов</value>
   </data>
   <data name="notValidExe" xml:space="preserve">
     <value>Вы не выбрали приложение. Укажите путь к исполняемому файлу</value>
